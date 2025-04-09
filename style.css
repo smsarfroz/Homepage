@@ -9,6 +9,50 @@
     font-size: larger;
 } */
 
+* {
+    margin: 0;
+    padding: 0;
+}
 .devicon-github-original {
     font-size: 50px;
+}
+
+.handles img {
+    max-width: 50px;
+    min-height: 50px;
+}
+.details img {
+    max-width: 50px;
+    min-height: 50px;
+}
+
+.portrait1 {
+    max-width: 100px;
+    min-height: 100px;
+}
+
+.portrait2 img {
+    width: 200px;
+    height: 200px;
+}
+
+main img {
+    max-width: 50px;
+    min-height: 50px;
+}
+
+.phone img, .email img {
+    max-width: 50px;
+    min-height: 50px;
+}
+
+.contactMe {
+    background-color: rgb(123, 123, 207);
+    display: flex;
+    color: white;
+}
+.phone , .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
