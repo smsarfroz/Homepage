@@ -43,7 +43,7 @@ main img {
     flex-wrap: wrap;
     color: white;
     gap: 2rem;
-    padding: 2rem;
+    padding: 2rem 2.5rem;
 }
 .portrait2 {
     max-width: 60%;
@@ -65,7 +65,7 @@ main img {
     grid-template-columns: 1fr 2fr;
     padding: 3rem;
     background-color: #3498db;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 .aboutIcons img { 
     width: 25px;
@@ -73,10 +73,11 @@ main img {
 }
 .aboutText {
     background-color: white;
+    margin: 1rem 0;
 }
 .portrait1 {
     width: 100%;
-    min-width: 300px;
+    min-width: 500px;
     max-width: 600px;
     height: auto;
     object-fit: cover;
@@ -113,6 +114,7 @@ main img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .projecticons {
     display: flex;
@@ -126,6 +128,8 @@ main img {
 }
 .aboutText {
     padding: 2.5rem 2rem;
+    box-shadow: 6px 8px 8px rgba(0,0,0,0.2);
+
 }
 .aboutmetextlorem {
     padding-top: 1rem;
@@ -136,4 +140,31 @@ main img {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
+    /* align-items: end; this doesn't work because it aligning items in vertical direction */
+}
+.name {
+    color: black;
+    font-family: 'Playfair Display';
+    font-size: 4rem;
+}
+.person {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}   
+
+.aboutText {
+    z-index: 1;
+
+}
+.portrait1 {
+    z-index: 2;
+}
+.person {
+    position: relative;
+}
+.name {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
 }
