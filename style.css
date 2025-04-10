@@ -65,7 +65,7 @@ main img {
     grid-template-columns: 1fr 2fr;
     padding: 3rem;
     background-color: #3498db;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
 }
 .aboutIcons img { 
     width: 25px;
@@ -120,4 +120,20 @@ main img {
 }
 .description {
     padding-top: 1rem;
+}
+.workTitle {
+    font-size: 4rem;
+}
+.aboutText {
+    padding: 2.5rem 2rem;
+}
+.aboutmetextlorem {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.aboutIcons {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
 }
