@@ -14,7 +14,7 @@
     padding: 0;
 }
 body {
-    background: linear-gradient(to left, rgb(104, 100, 197), rgb(102, 186, 216));
+    background: linear-gradient(to left, #2c3e50, #3498db);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -23,8 +23,8 @@ body {
 }
 
 .handles img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .details img {
     width: 50px;
@@ -36,38 +36,53 @@ body {
     min-height: 100px;
 }
 
-/* .portrait2 img {
-    max-width: 500px;
-    height: auto;
-
-} */
-.portrait2 {
-    width: 60%;
-    height: 600px;
-    background-image: url("./assets/portraits/portrait2.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
 
 main img {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
 .phone img, .email img {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
-.contactMe {
-    background-color: rgb(7, 63, 97);
-    display: flex;
-    color: white;
-}
+
 .phone , .email {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.contactMe {
+    background-color: #2980b9;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 2rem;
+    padding: 2rem;
+}
+.portrait2 {
+    border-radius: 8px;
+    max-width: 60%;
+    min-width: 30%;
+    height: auto;
+}
+
+.leftPartContact {
+    min-width: 200px;
+    line-height: 3.3;
+    font-size: 1.2rem;
+}
+.handles {
+    display: flex;
+    gap: 1rem;
+}
+.aboutMe {
+    padding: 3rem;
+    background-color: #3498db;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
+}
+.aboutIcons img { 
+    width: 25px;
+    height: 25px;
 }
