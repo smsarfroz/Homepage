@@ -1,9 +1,16 @@
-
 * {
     margin: 0;
     padding: 0;
 }
+* {
+    box-sizing: border-box;
+}
+body > * {
+    width: 100%;
+    max-width: 100%;
+}
 body {
+    width: 100%;
     background: linear-gradient(to left, #2c3e50, #3498db);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -38,15 +45,16 @@ main img {
     gap: 10px;
 }
 .contactMe {
+    width: 100%;
     background-color: #2980b9;
-    display: flex;
-    flex-wrap: wrap;
     color: white;
     gap: 2rem;
-    padding: 2rem 2.5rem;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .portrait2 {
-    max-width: 60%;
+    max-width: 100%;
     min-width: 30%;
     height: auto;
 }
@@ -61,10 +69,11 @@ main img {
     gap: 1rem;
 }
 .aboutMe {
+    width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 3rem;
+    padding: 2rem 1rem;
     background-color: #3498db;
     z-index: 1;
     /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
@@ -83,9 +92,7 @@ main img {
     margin: 1rem 0;
 }
 .portrait1 {
-    width: 100%;
-    /* min-width: 460px; */
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -97,16 +104,16 @@ main img {
 .projects > div {
     box-shadow: 6px 8px 8px rgba(0,0,0,0.2);
     background: white;
-    max-width: 48%;
-    min-width: 320px;
-    min-height: 350px;
-    height: auto;
 }
 .projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr) ;
     gap: 3rem;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
 }
 .projectImage {
     width: 100%;
@@ -148,7 +155,6 @@ main img {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
-    /* align-items: end; this doesn't work because it aligning items in vertical direction */
 }
 .name {
     color: black;
@@ -159,6 +165,7 @@ main img {
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }   
 
 .aboutText {
@@ -168,6 +175,8 @@ main img {
 .portrait1 {
     z-index: 2;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 .person {
     position: relative;
@@ -185,9 +194,10 @@ main img {
 
 @media (max-width: 500px) {
     .aboutMe {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        padding: 2rem 1rem;
+        padding: 2rem 2rem;
         /* clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%); */
         position: relative;
     }
@@ -217,8 +227,8 @@ main img {
         padding-left: 1.2rem;
         padding-right: 1.2rem;
     }
-    .projects > div {
-        min-width: fit-content;
+    .projects {
+        grid-template: repeat(6,1fr) / 1fr;
     }
     .myWork {
         display: flex;
@@ -255,10 +265,8 @@ main img {
 }
 
 @media (max-width: 1050px) {
-    .projects > div {
-        max-width: 400px;
-    }
     .projects {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
         margin-bottom: 6rem;
     }
     .contactMe {
@@ -283,18 +291,30 @@ main img {
     }
     .person {
         /* position: absolute; */
+        float: left;
     }
     .portrait1 {
         min-height: 300px;
     }
-    .aboutText {
+    /* .aboutText {
         position: absolute;
         left: 6rem;
         top: 7rem;
         right: 5rem;
-        text-align: left;
-        text-wrap: wrap;
+        height: 15rem;
+    } */
+    /* .aboutmeTitle {
+        position: absolute;
+        left: 24rem;
     }
     .aboutmetextlorem {
+        position: absolute;
+        left: 17rem;
+        top: 6rem;
     }
+    .aboutIcons {
+        position: absolute;
+        top: 15rem;
+        left: 43rem;
+    } */
 }
