@@ -105,9 +105,7 @@ main img {
     object-fit: cover;
 }
 .myWork {
-    padding: 4rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    margin: 2vw 2vw;
 }
 .projects > div {
     box-shadow: 6px 8px 8px rgba(0,0,0,0.2);
@@ -116,12 +114,13 @@ main img {
 .projects {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr) ;
-    gap: 3rem;
-    /* padding-top: 2rem; */
+    gap: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 1rem;
+    /* width: 100%; */
+    width: auto;
 }
 .projectImage {
     width: 100%;
@@ -129,7 +128,7 @@ main img {
     height: auto;
 }
 .aboutProject {
-    padding: 2rem 2rem;
+    padding: 2vw 2vw;
     display: flex;
     flex-direction: column;
 }
@@ -200,13 +199,13 @@ main img {
     font-size: 5vw;
 }
 
+/*
 @media (max-width: 500px) {
     .aboutMe {
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 2vw 2vw;
-        /* clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%); */
         position: relative;
     }
     .portrait1 {
@@ -220,7 +219,6 @@ main img {
     .aboutText {
         margin-top: 0;
         padding: 2vw 2vw;
-        /* min-height: 400px; */
 
     }
     .aboutmetextlorem {
@@ -299,20 +297,19 @@ main img {
         padding-bottom: 10vw;
     }
     .person {
-        /* position: absolute; */
         float: left;
     }
     .portrait1 {
         min-height: 300px;
     }
-    /* .aboutText {
+    .aboutText {
         position: absolute;
         left: 6rem;
         top: 7rem;
         right: 5rem;
         height: 15rem;
-    } */
-    /* .aboutmeTitle {
+    }
+    .aboutmeTitle {
         position: absolute;
         left: 24rem;
     }
@@ -325,5 +322,6 @@ main img {
         position: absolute;
         top: 15rem;
         left: 43rem;
-    } */
+    }
 }
+*/
