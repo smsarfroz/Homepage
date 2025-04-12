@@ -2,8 +2,15 @@
     margin: 0;
     padding: 0;
 }
+html {
+    padding: 0;
+    margin: 0;
+}
 * {
     box-sizing: border-box;
+}
+* {
+    outline: 7px dotted #f002;
 }
 body > * {
     width: 100%;
@@ -14,35 +21,36 @@ body {
     background: linear-gradient(to left, #2c3e50, #3498db);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 0;
 }
 .devicon-github-original {
     font-size: 50px;
 }
 
 .handles img {
-    width: 40px;
-    height: 40px;
+    width: 2.5w;
+    height: 2.5vw;
 }
 .details img {
-    width: 30px;
-    height: 30px;
+    width: 2vw;
+    height: 2vw;
 }
 
 main img {
-    width: 25px;
-    height: 25px;
+    /* width: 25px;
+    height: 25px; */
 }
 
 .phone img, .email img {
-    width: 25px;
-    height: 25px;
+    width: 2vw;
+    height: 2vw;
 }
 
 
 .phone , .email {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1vw;
 }
 .contactMe {
     width: 100%;
@@ -60,9 +68,9 @@ main img {
 }
 
 .leftPartContact {
-    min-width: 200px;
+    min-width: 50%;
     line-height: 3.3;
-    font-size: 1.2rem;
+    font-size: 1.1vw;
 }
 .handles {
     display: flex;
@@ -73,7 +81,7 @@ main img {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 2rem 1rem;
+    padding: 2vw 1vw;
     background-color: #3498db;
     z-index: 1;
     /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
@@ -84,12 +92,12 @@ main img {
     z-index: -1;
 }
 .aboutIcons img { 
-    width: 25px;
-    height: 25px;
+    width: 2vw;
+    height: 2vw;
 }
 .aboutText {
     background-color: white;
-    margin: 1rem 0;
+    margin: 1vw 0;
 }
 .portrait1 {
     max-width: 100%;
@@ -117,7 +125,7 @@ main img {
 }
 .projectImage {
     width: 100%;
-    min-height: 300px;
+    min-height: 33%;
     height: auto;
 }
 .aboutProject {
@@ -139,27 +147,27 @@ main img {
     padding-top: 1rem;
 }
 .workTitle {
-    font-size: 4rem;
+    font-size: 4vw;
 }
 .aboutText {
-    padding: 2.5rem 2rem;
+    padding: 2.5vw 2vw;
     box-shadow: 6px 8px 8px rgba(0,0,0,0.2);
 
 }
 .aboutmetextlorem {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 .aboutIcons {
-    padding-top: 1rem;
+    padding-top: 1vw;
     display: flex;
-    gap: 1rem;
+    gap: 1vw;
     justify-content: flex-end;
 }
 .name {
     color: black;
     font-family: 'Playfair Display';
-    font-size: 4rem;
+    font-size: 7vw;
 }
 .person {
     display: flex;
@@ -189,7 +197,7 @@ main img {
 }
 .aboutmeTitle {
     font-family: 'Playfair Display';
-    font-size: 3rem;
+    font-size: 5vw;
 }
 
 @media (max-width: 500px) {
@@ -197,7 +205,7 @@ main img {
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding: 2rem 2rem;
+        padding: 2vw 2vw;
         /* clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%); */
         position: relative;
     }
@@ -211,11 +219,12 @@ main img {
     }
     .aboutText {
         margin-top: 0;
-        padding: 2rem 2rem;
-        min-height: 400px;
+        padding: 2vw 2vw;
+        /* min-height: 400px; */
+
     }
     .aboutmetextlorem {
-        font-size: 1.5rem;
+        font-size: 4vw;
     }
     .aboutmeTitle {
         text-align: center;
@@ -224,8 +233,8 @@ main img {
         justify-content: center;
     }
     .myWork {
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
+        padding-left: 1.2vw;
+        padding-right: 1.2vw;
     }
     .projects {
         grid-template: repeat(6,1fr) / 1fr;
@@ -245,14 +254,14 @@ main img {
     .leftPartContact {
         display: flex;
         flex-direction: column;
-        line-height: 2rem;
-        gap: 3rem;
+        line-height: 2vw;
+        gap: 3vw;
     }
     .contactmeTitle {
         text-align: center;
     }
     .getintouch {
-        font-size: 1.4rem;
+        font-size: 1.5vw;
     }
     .handles {
         justify-content: center;
@@ -267,27 +276,27 @@ main img {
 @media (max-width: 1050px) {
     .projects {
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-        margin-bottom: 6rem;
+        margin-bottom: 6vw;
     }
     .contactMe {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
-        padding: 5rem 3rem;
+        padding: 5vw 3vw;
     }
     .leftPartContact {
         display: flex;
         flex-direction: column;
-        line-height: 1.7rem;
-        gap: 1.8rem;
+        line-height: 1.7vw;
+        gap: 1.8vw;
     }
     .portrait2 {
         max-width: 100%;
         object-fit: contain;
-        min-height: 4rem;
+        min-height: 4vw;
     }
     .aboutMe {
         position: relative;
-        padding-bottom: 10rem;
+        padding-bottom: 10vw;
     }
     .person {
         /* position: absolute; */
