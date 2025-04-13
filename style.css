@@ -199,6 +199,61 @@ main img {
 }
 
 
+
+@media (max-width: 1000px) {
+    .projects {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        margin-bottom: 6vw;
+    }
+    .contactMe {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        padding: 5vw 3vw;
+    }
+    .leftPartContact {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.7vw;
+        gap: 1.8vw;
+    }
+    .portrait2 {
+        max-width: 100%;
+        object-fit: contain;
+        min-height: 4vw;
+    }
+    .aboutMe {
+        position: relative;
+        padding-bottom: 10vw;
+    }
+    .person {
+        float: left;
+    }
+    .portrait1 {
+        min-height: 300px;
+    }
+    .aboutText {
+        position: absolute;
+        left: 6rem;
+        top: 7rem;
+        right: 5rem;
+        height: 15rem;
+    }
+    .aboutmeTitle {
+        position: absolute;
+        left: 24rem;
+    }
+    .aboutmetextlorem {
+        position: absolute;
+        left: 17rem;
+        top: 6rem;
+    }
+    .aboutIcons {
+        position: absolute;
+        top: 15rem;
+        left: 43rem;
+    }
+}
+
 @media (max-width: 500px) {
     .aboutMe {
         width: 100%;
@@ -271,58 +326,4 @@ main img {
     }
 }
 
-/*
-@media (max-width: 1050px) {
-    .projects {
-        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-        margin-bottom: 6vw;
-    }
-    .contactMe {
-        display: grid;
-        grid-template-columns: 0.5fr 1fr;
-        padding: 5vw 3vw;
-    }
-    .leftPartContact {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.7vw;
-        gap: 1.8vw;
-    }
-    .portrait2 {
-        max-width: 100%;
-        object-fit: contain;
-        min-height: 4vw;
-    }
-    .aboutMe {
-        position: relative;
-        padding-bottom: 10vw;
-    }
-    .person {
-        float: left;
-    }
-    .portrait1 {
-        min-height: 300px;
-    }
-    .aboutText {
-        position: absolute;
-        left: 6rem;
-        top: 7rem;
-        right: 5rem;
-        height: 15rem;
-    }
-    .aboutmeTitle {
-        position: absolute;
-        left: 24rem;
-    }
-    .aboutmetextlorem {
-        position: absolute;
-        left: 17rem;
-        top: 6rem;
-    }
-    .aboutIcons {
-        position: absolute;
-        top: 15rem;
-        left: 43rem;
-    }
-}
-*/
+
