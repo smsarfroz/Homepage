@@ -10,12 +10,12 @@ html {
     box-sizing: border-box;
 }
 * {
-    outline: 7px dotted #f002;
+    outline: 2px dotted deeppink;
 }
-body > * {
+/* body > * {
     width: 100%;
     max-width: 100%;
-}
+} */
 body {
     width: 100%;
     background: linear-gradient(to left, #2c3e50, #3498db);
