@@ -10,7 +10,7 @@ html {
     box-sizing: border-box;
 }
 * {
-    outline: 2px dotted deeppink;
+    /* outline: 2px dotted deeppink; */
 }
 body {
     width: 100%;
@@ -49,7 +49,7 @@ main img {
     gap: 1vw;
 }
 .contactMe {
-    background-color: #2980b9;
+    /* background-color: #2980b9; */
     color: white;
     gap: 2rem;
     display: grid;
@@ -75,7 +75,7 @@ main img {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: #3498db;
+    /* background-color: #3498db; */
     z-index: 1;
     margin: 2vw;
 }
@@ -264,13 +264,14 @@ main img {
         flex-direction: column;
         line-height: 2vw;
         gap: 3vw;
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .contactmeTitle {
         text-align: center;
+        margin-bottom: 2vw;
     }
     .getintouch {
-        font-size: 1.5vw;
+        font-size: 2.7vw;
     }
     .handles {
         justify-content: center;
