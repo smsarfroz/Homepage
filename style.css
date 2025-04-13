@@ -12,10 +12,6 @@ html {
 * {
     outline: 2px dotted deeppink;
 }
-/* body > * {
-    width: 100%;
-    max-width: 100%;
-} */
 body {
     width: 100%;
     background: linear-gradient(to left, #2c3e50, #3498db);
@@ -53,13 +49,12 @@ main img {
     gap: 1vw;
 }
 .contactMe {
-    width: 100%;
     background-color: #2980b9;
     color: white;
     gap: 2rem;
-    padding: 2rem 1rem;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1.5fr;
+    margin: 2vw;
 }
 .portrait2 {
     max-width: 100%;
@@ -69,22 +64,20 @@ main img {
 
 .leftPartContact {
     min-width: 50%;
-    line-height: 3.3;
-    font-size: 1.1vw;
+    line-height: 2;
+    font-size: 2vw;
 }
 .handles {
     display: flex;
     gap: 1rem;
 }
 .aboutMe {
-    width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 2vw 1vw;
     background-color: #3498db;
     z-index: 1;
-    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
+    margin: 2vw;
 }
 .aboutMe::before {
     clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
@@ -92,8 +85,8 @@ main img {
     z-index: -1;
 }
 .aboutIcons img { 
-    width: 2vw;
-    height: 2vw;
+    width: 4vw;
+    height: 4vw;
 }
 .aboutText {
     background-color: white;
@@ -114,7 +107,7 @@ main img {
 .projects {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr) ;
-    gap: 1vw;
+    gap: 2vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
     justify-content: center;
@@ -142,16 +135,20 @@ main img {
     display: flex;
     gap: 1rem;
 }
+.projecticons img {
+    width: 4vw;
+    height: 4vw;
+}
 .description {
     padding-top: 1rem;
 }
 .workTitle {
-    font-size: 4vw;
+    /* font-size: 4vw; */
+    font-size: 7vw;
 }
 .aboutText {
     padding: 2.5vw 2vw;
     box-shadow: 6px 8px 8px rgba(0,0,0,0.2);
-
 }
 .aboutmetextlorem {
     padding-top: 1vw;
@@ -165,6 +162,7 @@ main img {
 }
 .name {
     color: black;
+    font-weight: bold;
     font-family: 'Playfair Display';
     font-size: 7vw;
 }
@@ -196,10 +194,11 @@ main img {
 }
 .aboutmeTitle {
     font-family: 'Playfair Display';
-    font-size: 5vw;
+    font-size: 6vw;
+    font-weight: bold;
 }
 
-/*
+
 @media (max-width: 500px) {
     .aboutMe {
         width: 100%;
@@ -254,6 +253,7 @@ main img {
         flex-direction: column;
         line-height: 2vw;
         gap: 3vw;
+        font-size: 3vw;
     }
     .contactmeTitle {
         text-align: center;
@@ -271,6 +271,7 @@ main img {
     }
 }
 
+/*
 @media (max-width: 1050px) {
     .projects {
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
